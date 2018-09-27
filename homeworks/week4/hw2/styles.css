@@ -1,0 +1,89 @@
+html,
+body {
+    margin: 0;
+    font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+}
+
+div .container__banner {
+    width: 100%;
+    height: 260px;
+    margin-top: 0;
+    background: url(https://lh6.googleusercontent.com/YeryuX-h7n_MamJSS3HiG5w3rUu4kYn9IXaTON__mqIr6jEeqFO08GV5JWus4IsDJ-9UNwr9qQ=w1200) no-repeat center;
+    background-size: cover;
+}
+
+div .container__main {
+    background-color: #f8ede6;
+}
+
+form {
+    position: relative;
+    margin: auto;
+    top: -80px;
+    max-width: 640px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: white;
+    border-top: 10px solid #ff894b;
+}
+
+.form__header__title {
+    font-size: 34px;
+    margin: 0 auto;
+    padding: 10px 30px;
+    color: #0f0e0e;
+}
+
+.form__header__description {
+    margin: 0 auto;
+    padding: 10px 30px;
+    line-height: 135%;
+    font-size: 13px;
+}
+
+.form__require {
+    margin-top: 5px;
+    padding: 0px 30px;
+    color: red;
+    font-size: 13px;
+}
+
+.form__body {
+    margin-top: 10px;
+    padding: 0px 30px;
+}
+
+.form__input {
+    margin-top: 10px;
+    padding: 0px 30px;
+    border: none;
+    line-height: 135%;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 24px;
+}
+
+#email {
+    margin: 20px 30px;
+    padding-bottom: 5px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    font-size: 13px;
+}
+
+.reminder {
+    margin-top: 10px;
+    padding: 0px 30px;
+    color: white;
+}
+
+.form__yourname {
+    margin-top: 0px;
+    padding: 0px 30px;
+    font-size: 13px;
+}
+
+.whatever {
+    margin-top: 10px;
+    padding: 0px 30px;
+}
