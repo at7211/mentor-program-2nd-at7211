@@ -35,6 +35,10 @@ form {
     color: #0f0e0e;
 }
 
+.star {
+    color: red;
+}
+
 .form__header__description {
     margin: 0 auto;
     padding: 10px 30px;
@@ -50,7 +54,7 @@ form {
 }
 
 .form__body {
-    margin-top: 10px;
+    margin-top: 30px;
     padding: 0px 30px;
 }
 
