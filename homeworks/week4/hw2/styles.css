@@ -91,3 +91,13 @@ form {
     margin-top: 10px;
     padding: 0px 30px;
 }
+
+#submit {
+    margin: 20px 30px;
+    background-color: blue;
+    color: white;
+    border: none;
+    width: 90px;
+    height: 40px;
+    border-radius: 5px;
+}
