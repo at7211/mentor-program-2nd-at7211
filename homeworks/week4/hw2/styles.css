@@ -67,13 +67,14 @@ form {
     font-size: 24px;
 }
 
-#email {
+#email, input[type="text"]{
     margin: 20px 30px;
     padding-bottom: 5px;
     border: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     font-size: 13px;
 }
+
 
 .reminder {
     margin-top: 10px;
