@@ -1,0 +1,41 @@
+.container {
+    margin: 100px auto;
+    width: 400px;
+    padding: 10px;
+    border: 1px solid #DDDDDD;
+
+}
+
+.btn__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+#ac, .operator, .num {
+    font-size:16px;
+}
+
+#result {
+    width: 380px;
+    height: 56px;
+    margin-bottom: 10px;
+    border: 1px solid #DDDDDD;
+    text-align: right;
+    font-size: 54px;
+}
+
+
+button {
+    width: 94px;
+    height: 36px;
+    display: inline-block;
+    margin-top: 6px;
+}
+
+
+#equal {
+    width: 196px;
+    background: #ff8d00;
+    border-style: none;
+}
+

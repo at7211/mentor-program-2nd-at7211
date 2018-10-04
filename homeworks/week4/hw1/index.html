@@ -6,17 +6,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>calculator</title>
-    <link rel='stylesheet' href='styles.css' />
-    <script>
-    </script>
-</head>
-    <div class="container">
-        <div>
 
+</head>
+
+
+<body>
+    <div class="container">
+        <div id="process"></div>
+        <div id="result">0</div>
+        <div class="btn">
+            <div class="btn__row">
+                <button id="ac">AC</button>
+                <button class="operator divide">÷</button>
+            </div>
+            <div class="btn__row">
+                <button class="num num7">7</button>
+                <button class="num num8">8</button>
+                <button class="num num9">9</button>
+                <button class="operator multiply">×</button>
+            </div>
+            <div class="btn__row">
+                <button class="num num4">4</button>
+                <button class="num num5">5</button>
+                <button class="num num6">6</button>
+                <button class="operator minus">-</button>
+            </div>
+            <div class="btn__row">
+                <button class="num num1">1</button>
+                <button class="num num2">2</button>
+                <button class="num num3">3</button>
+                <button class="operator plus">+</button>
+            </div>
+            <div class="btn__row">
+                <button class="num num0">0</button>
+                <button class="num">.</button>
+                <button id="equal">=</button>
+            </div>
         </div>
     </div>
-<body>
-
 </body>
 
-</html> 
+<link rel='stylesheet' href='styles.css' />
+<script>
+    let q = (selector) => document.querySelector(selector); // 宣告變數q=querySelector
+    let result = q('#result')
+    let firstNumber = null
+    let secondNumber = null
+    let operator = null
+    let process = null
+
+
+
+    for (let i = 1; i <= 9; i++) {
+        q('.num' + i).addEventListener('click', () => {
+            if (result.innerText === '0') {
+                result.innerText = ''; //讓最高位數字不會出現0
+                clickNumber(i)
+            } else
+                clickNumber(i)
+        })
+    }
+
+    document.querySelector('.plus').addEventListener('click', () => {
+        handleOperator('+')
+    })
+    document.querySelector('.minus').addEventListener('click', () => {
+        handleOperator('-')
+    })
+    document.querySelector('.multiply').addEventListener('click', () => {
+        handleOperator('×')
+    })
+    document.querySelector('.divide').addEventListener('click', () => {
+        handleOperator('÷')
+    })
+    document.querySelector('#equal').addEventListener('click', () => {
+        handleOperator('=')
+    })
+
+
+    function clickNumber(num) {
+        appendResult(num)
+    }
+
+    function handleOperator(op) {
+        if (op === '=') {
+            secondNumber = Number(getResult())
+            if (operator === "+") {
+                setResult(firstNumber + secondNumber)
+            } else if (operator === "-") {
+                setResult(firstNumber - secondNumber)
+            } else if (operator === "×") {
+                setResult(firstNumber * secondNumber)
+            } else if (operator === "÷") {
+                setResult(firstNumber / secondNumber)
+            }
+        } else {
+            firstNumber = Number(getResult())
+            setResult('')
+            operator = op
+        }
+    }
+
+
+
+    function setResult(str) {
+        q('#result').innerText = str
+    }
+
+    function appendResult(str) {
+        q('#result').innerText += str
+    }
+
+    function getResult() {
+        return q('#result').innerText
+    }
+
+    if (result.innerText.split())
+
+
+        //使result歸零
+        q('#ac').addEventListener('click', () => {
+            result.innerText = '0';
+        })
+</script>
+
+</html>
