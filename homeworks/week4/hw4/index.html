@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        div {
+        font-size:40px;
+    }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div>SHOW</div>
+    <button value="button" type="button">hide</button>
+</body>
+<script>
+    let q = (selector) => document.querySelector(selector);
+
+    function hide() {
+        return q("div").style.color = "white";
+    }
+
+    function show() {
+        return q("div").style.color = "black";
+    }
+
+    q("button").addEventListener('click', () => {
+        if (q("button").innerText === "hide") {
+            q("button").innerText = "show";
+            hide()
+        } else {
+            q("button").innerText = "hide";
+            show();
+        }
+
+    })
+</script>
+
+</html>
