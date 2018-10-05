@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    background: url(http://i.imgur.com/gXzK0eL.jpg) center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header {
+    text-align: center;
+    line-height: 3px;
+    background-color: rgba(0, 0, 0, 0.475);
+    color: #00BCD4
+}
+
+h1 {
+    font-size: 40px
+}
+
+p {
+    font-size: 16px;
+}
+
+
+.stream_container {
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.stream {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.9;
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.stream:hover {
+    cursor: pointer;
+    opacity: 1;
+    transform: scale(1.05, 1.05);
+}
+
+.stream a {
+    text-decoration: none;
+}
+
+.preview {
+    height: 180px;
+}
+
+.description {
+    width: 320px;
+    display: flex;
+    flex-direction: row;
+    background: #000000cc;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 70px;
+    border: none;
+    border-radius: 50%;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.status {
+    margin-bottom: 10px;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.name {
+    font-style: italic;
+}
