@@ -1,11 +1,11 @@
+//#4//
 function calculate(num) {
-    var str = "";
     for (var i = 1; i <= num; i++) {
         if (num % i == 0) {
-            str += i + ',' ;
+            console.log(i)
         }
     }
-    str = str.substring(0, str.length-1);
-    return str;
+
 }
 
+calculate(9)

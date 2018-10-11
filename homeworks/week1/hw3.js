@@ -6,7 +6,3 @@ function reverse(str) {
 	}
 	return revstr;
 }
-
-
-
-
